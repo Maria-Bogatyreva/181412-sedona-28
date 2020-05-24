@@ -73,14 +73,37 @@
 
   		<section>
   			<h2>Заинтересовались?</h2>
-  			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-	  		<img src="img/map.png" width="1199" height="594" alt="Карта города">
-  			<!--А здесь будет всплывающий попап-->
+  			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне  </p>
+	  		 			
+        <h3>Поиск гостиницы в Седоне</h3>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arr-date">Дата заезда:</label>
+            <input type="text" id="arr-date" name="arrival-date" placeholder="24 апреля 2017">
+          </p>
+
+          <p>
+            <label for="dep-date">Дата выезда:</label>
+            <input type="text" id="dep-date" name="departure-date" placeholder="4 июля 2017">
+          </p>
+
+          <p>
+            <label for="adult">Взрослые:</label>
+            <input type="text" id="adult" name="adult-person" placeholder="2">
+          </p>
+
+          <p>
+            <label for="child">Дети:</label>
+            <input type="text" id="child" name="children" placeholder="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
+        <img src="img/map.png" width="1199" height="594" alt="Карта города">
   		</section>
   	</main>
 
   	<footer>  	
-  		<p>#visitSEDONA</p>
+  		<p><a href="#">#visitSEDONA</a></p>
   		<a href="tel:+74956660166"">ТЕЛ: +7(495) 666-01-66</a>
   		<ul>
   			<!--Сюда картинки соц.сетей не вставляю, так как они тоже пойдут через CSS-->
