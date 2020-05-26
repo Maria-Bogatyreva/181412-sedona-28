@@ -21,29 +21,55 @@
 
 	<main>
 		<section>
-			<div>
-				<p>Инфраструктура</p>
-				<ul>
-					<li>Бассейн</li>
-					<li>Парковка</li>
-					<li>Wi-Fi</li>
-				</ul>
-			</div>
+			<h2 class=" visually-hidden">Фильтр и сортировка</h2>
+			<form action="https://echo.htmlacademy.ru" method="get">
+			 	<fieldset>
+			 		<legend>Инфраструктура:</legend>
+			 		<ul>
+			 			<li>
+			 				<input type="checkbox" name="pool" id="filter-pool" checked>
+			 				<label for="filter-pool">Бассейн</label>
+			 			</li>
+			 			<li>
+			 				<input type="checkbox" name="parking" id="filter-parking">
+			 				<label for="filter-parking">Парковка</label>
+			 			</li>
+			 			<li>
+			 				<input type="checkbox" name="wi-fi" id="filter-wifi">
+			 				<label for="">Wi-Fi</label>
+			 			</li>			 			
+			 		</ul>
+			 	</fieldset>
 
-			<div>
-				<p>Тип жилья</p>
-				<ul>
-					<li>Гостиница</li>
-					<li>Мотель</li>
-					<li>Апартаменты</li>
-				</ul>
-			</div>
-			<div>
-				<p>Стоимость в сутки</p>
-				<span>от 0</span>
-				<span>до 3000</span>
-				<a href="#">Показать</a>
-			</div>
+			 	<fieldset>
+			 		<legend>Тип жилья:</legend>
+			 		<ul>
+		 				<li>
+			 				<input type="checkbox" name="hotel" id="filter-hotel" checked>
+			 				<label for="filter-hotel">Гостиница</label>
+			 			</li>
+			 			<li>
+			 				<input type="checkbox" name="motel" id="filter-motel" checked>
+			 				<label for="filter-motel">Мотель</label>
+			 			</li>
+			 			<li>
+			 				<input type="checkbox" name="apartmens" id="filter-apartmens" checked>
+			 				<label for="filter-apartmens">Апартаменты</label>
+			 			</li>
+			 		</ul>
+			 	</fieldset>
+
+			 	<fieldset>
+			 		<legend>Стоимость в сутки (р):</legend>
+			 		<label for="min">от</label>
+			 		<input type="text" id="min" name="min-price" placeholder="0">
+			 		<label for="max">до</label>
+			 		<input type="text" id="max" name="max-price" placeholder="3000">
+			 	</fieldset>
+
+			 	<button type="submit">Показать</button>
+			</form>
+				
 			<div>
 				<p>Найдено: <span>3</span></p>
 
