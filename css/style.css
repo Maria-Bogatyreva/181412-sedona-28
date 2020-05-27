@@ -5,3 +5,29 @@
 	--selection-color: #81B3D2;
 	--additional-color: #766357;
 }
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial. sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: var(--basic-color);
+	background-color: #dcdcdc;
+
+}
+.wrapper {
+	width: 1200px;
+	margin: 0px auto;
+	background-color: var(--accent-color);
+}
+
+li {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*HEADER*/
+
