@@ -14,6 +14,7 @@ body {
 	font-weight: normal;
 	color: var(--basic-color);
 	background-color: #dcdcdc;
+	text-transform: uppercase;
 
 }
 .wrapper {
@@ -35,7 +36,6 @@ a {
 /*HEADER*/
 .main-nav {
 	line-height: 26px;
-	text-transform: uppercase;
 	font-weight: bold;
 	
 }
@@ -49,6 +49,31 @@ a {
 .main-nav a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
+/*MAIN*/
+h1 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: var(--heading-color);
+	text-transform: uppercase;
+	text-align: center;
+}
+p.description {
+	line-height: 26px;
+	text-align: center;
+}
+/*SEARCH HOTELS*/
+h2 {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+p.reservation {
+	line-height: 24px;
+	text-align: center;
+}
+
 
 
 
