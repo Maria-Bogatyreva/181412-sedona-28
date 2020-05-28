@@ -76,11 +76,13 @@ h2 {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
+	color: var(--heading-color);
 	text-align: center;
 }
 p.reservation {
 	line-height: 24px;
 	text-align: center;
+	color: var(--heading-color);
 }
 /*SEARCH FORM*/
 .search_title {
