@@ -29,5 +29,26 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+a {
+	text-decoration: none;
+}
 /*HEADER*/
+.main-nav {
+	line-height: 26px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+.main-nav a {
+	color: var(--heading-color);
+}
+.main-nav a:focus,
+.main-nav a:hover {
+	color: var(--selection-color);
+}
+.main-nav a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+
 
