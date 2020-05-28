@@ -4,6 +4,8 @@
 	--accent-color: #ffffff;
 	--selection-color: #81B3D2;
 	--additional-color: #766357;
+	--additional-color-darker: #604E43;
+	--additional-color-dark:#503E33; ;
 	--form-color: #F2F2F2;
 }
 body {
@@ -48,7 +50,10 @@ a {
 	color: var(--selection-color);
 }
 .main-nav a:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--heading-color, 0.3);
+}
+.main-nav a:not([href]) {
+	color: var(--additional-color);
 }
 /*MAIN*/
 h1 {
@@ -75,13 +80,24 @@ p.reservation {
 	text-align: center;
 }
 /*SEARCH FORM*/
-.search__title {
+.search_title {
+	font-family: inherit;
+	color: var(--accent-color);
+	text-transform: uppercase;
 	background-color: var(--additional-color);
 	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	color: var(--accent-color);
+	border: none;
+}
+.search_title:hover {
+	background-color: var(--additional-color-darker);
+}
+.search_title:active {
+	background-color: var(--additional-color-dark);
+	color: var(--accent-color, 0.3);
+
 }
 .search_form label {
 	line-height: 26px;
