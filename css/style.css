@@ -98,19 +98,40 @@ p.reservation {
 	font-weight: bold;
 }
 .change_btn {
+	font: inherit;
 	background-color: var(--form-color);
-	border: 0;
+	border: none;
 }
 .search_btn {
+	font: inherit;
 	background-color: var(--selection-color);
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	text-align: center;
-	border: 0;
+	border: none;
 	color: var(--accent-color);
 	text-transform: uppercase;
 }
+/*FOOTER*/
+.hashtag a,
+.tel a {
+	color: var(--heading-color);
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: bold;
+}
+.social_btn img{
+	background-color: var(--selection-color);
+	padding: 5px;/*Добавила, чтобы просто адекватнее смотрела иконка*/
+}
+.copyright {
+	line-height: 26px;
+	
+	color: var(--heading-color);
+}
+
 
 
 
