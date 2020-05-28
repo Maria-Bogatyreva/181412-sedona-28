@@ -73,8 +73,6 @@
 
 				 	<button type="submit">Показать</button>
 				</form>
-					
-				
 			</section>
 			<section>
 				<h2 class="visually-hidden">Гостиницы: результаты поиска</h2>
@@ -93,12 +91,14 @@
 					<img src="https://via.placeholder.com/40x20" alt="">
 				</div>
 				<article>
-					<img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">	
-					<h3><a href="#">Amara Resort & Spa</a></h3>
-					<p>Гостиница</p>
-					<p>От 4000 Р.</p>
-					<a href="blank.html">Подробнее</a>
-					<a href="blank.html">Забронировать</a>
+					<img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa" class="hotel_foto">	
+					<h3 class="hotel_title"><a href="#">Amara Resort & Spa</a></h3>
+					<p class="hotel_description">
+						<span>Гостиница</span>
+						<span>От 4000 Р.</span>
+					</p>
+					<a href="blank.html" class="btn btn_info">Подробнее</a>
+					<a href="blank.html" class="btn btn_order">Забронировать</a>
 					<div>
 						<img src="https://via.placeholder.com/100x30" alt="">
 						<span>Рейтинг: 8.5</span>
@@ -106,12 +106,14 @@
 				</article>
 
 				<article>
-					<img src="img/desert-quail.jpg" width="135" height="90" alt="Desert Quail Inn">	
-					<h3><a href="">Desert Quail Inn</a></h3>
-					<p>Мотель</p>
-					<p>От 3000 Р.</p>
-					<a href="blank.html">Подробнее</a>
-					<a href="blank.html">Забронировать</a>
+					<img src="img/desert-quail.jpg" width="135" height="90" alt="Desert Quail Inn" class="hotel_foto">	
+					<h3 class="hotel_title"><a href="">Desert Quail Inn</a></h3>
+					<p class="hotel_description">
+						<span>Мотель</span>
+						<span>От 3000 Р.</span>
+					</p>
+					<a href="blank.html" class="btn btn_info">Подробнее</a>
+					<a href="blank.html" class="btn btn_order">Забронировать</a>
 					<div>
 						<img src="https://via.placeholder.com/100x30" alt="">
 						<span>Рейтинг: 8.9</span>
@@ -119,12 +121,14 @@
 				</article>
 
 				<article>
-					<img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at Poco Diablo">	
-					<h3><a href="#">Villas at Poco Diablo</a></h3>
-					<p>Апартаменты</p>
-					<p>От 2000 Р.</p>
-					<a href="blank.html">Подробнее</a>
-					<a href="blank.html">Забронировать</a>
+					<img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at Poco Diablo" class="hotel_foto">	
+					<h3 class="hotel_title"><a href="#">Villas at Poco Diablo</a></h3>
+					<p class="hotel_description">
+						<span>Апартаменты</span>
+						<span>От 2000 Р.</span>	
+					</p>
+					<a href="blank.html" class="btn btn_info">Подробнее</a>
+					<a href="blank.html" class="btn btn_order">Забронировать</a>
 					<div>
 						<img src="https://via.placeholder.com/100x30" alt="">
 						<span>Рейтинг: 9.2</span>
@@ -133,22 +137,37 @@
 			</section>		
 		</main>
 
-		<footer>
-			<p>#visitSEDONA</p>
-	  		<a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-	  		<ul>
-	  			<!--Сюда картинки соц.сетей не вставляю, так как они тоже пойдут через CSS-->
-	  			<li><a href="#">Twitter</a></li>
-	      		<li><a href="#">Facebook</a></li>
-	      		<li><a href="#">Youtube</a></li>
-	  		</ul>
-	  		<p>
-	  			Website by
-	  			<a href="https://up.htmlacademy.ru/htmlcss/28/project/sedona#sedona-3-8">
-	  				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy Logo">
-	  			</a>
-	  		</p>
-		</footer>
+		<footer>  	
+    		<p class="hashtag"><a href="#">#visitSEDONA</a></p>
+    		<p class="tel"><a href="tel:+74956660166" class="tel">ТЕЛ: +7(495) 666-01-66</a></p>
+        
+    		<ul>
+    			<li>
+    				<a class="social_btn" href="#">
+    					<span class="visually-hidden">Twitter</span>
+    					<img src="img/twitter.svg" alt="Twitter" width="17" height="17">
+    				</a>
+          		</li>
+          		<li>
+            		<a class="social_btn" href="#">
+              			<span class="visually-hidden">Facebook</span>
+              			<img src="img/facebook.svg" alt="Facebook" width="12" height="22">
+            		</a>
+          		</li>
+		        <li>
+		            <a class="social_btn" href="#">
+		              <span class="visually-hidden">Youtube</span>
+		              <img src="img/youtube.svg" alt="Youtube" width="20" height="16">
+		            </a>
+		        </li>
+		    </ul>
+		    <p class="copyright">
+		    	Website by
+		    </p>
+		    <a href="https://up.htmlacademy.ru/htmlcss/28/project/sedona#sedona-3-8">
+		        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy Logo">
+		    </a>
+    	</footer>
 	</div>
 </body>
 </html>
