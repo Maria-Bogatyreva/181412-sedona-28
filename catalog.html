@@ -26,8 +26,8 @@
 		<main>
 			<section>
 				<h2 class=" visually-hidden">Фильтр и сортировка</h2>
-				<form action="https://echo.htmlacademy.ru" method="get">
-				 	<fieldset>
+				<form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
+				 	<fieldset class="form-group">
 				 		<legend>Инфраструктура:</legend>
 				 		<ul>
 				 			<li>
@@ -45,7 +45,7 @@
 				 		</ul>
 				 	</fieldset>
 
-				 	<fieldset>
+				 	<fieldset class="form-group">
 				 		<legend>Тип жилья:</legend>
 				 		<ul>
 			 				<li>
@@ -63,7 +63,7 @@
 				 		</ul>
 				 	</fieldset>
 
-				 	<fieldset>
+				 	<fieldset class="form-group">
 				 		<legend>Стоимость в сутки (р):</legend>
 				 		<label for="min">от</label>
 				 		<input type="text" id="min" name="min-price" placeholder="0">
@@ -71,18 +71,18 @@
 				 		<input type="text" id="max" name="max-price" placeholder="3000">
 				 	</fieldset>
 
-				 	<button type="submit">Показать</button>
+				 	<button type="submit" class="filter-btn">Показать</button>
 				</form>
 			</section>
 			<section>
 				<h2 class="visually-hidden">Гостиницы: результаты поиска</h2>
-				<div>
-					<p>Найдено: <span>3</span></p>
+				<div class="sort">
+					<p class=sort-results>Найдено: 3</p>
 
-					<div>
+					<div class="sort-options">
 						<p>Сортировка:</p>
 						<ul>
-							<li><a href="#">По цене</a></li>
+							<li><a href="#" class="active">По цене</a></li>
 							<li><a href="#">По типу</a></li>
 							<li><a href="#">По рейтингу</a></li>
 						</ul>

@@ -162,6 +162,60 @@ h2 {
 	color: var(--accent-color);
 	text-transform: uppercase;
 }
+/*FILTER & SORT*/
+/*filter*/
+.filter-form {
+	background-color: #5496BD;/*Временно, чтобы был виден шрифт*/
+	color: var(--accent-color);
+}
+.filter-form legend {
+	font-size: 16px;
+	font-weight: bold;
+}
+.filter-form input[type=text] {
+	color: var(--accent-color);
+	text-transform: uppercase;
+	background-color: transparent;
+}
+.filter-btn {
+	color: inherit;
+	background-color: transparent;
+	text-transform: uppercase;
+	border: 2px solid var(--accent-color);
+	border-radius: 2px;
+}
+.filter-btn:hover {
+	background-color: var(--accent-color);
+	color: var(--heading-color);
+}
+/*sort*/
+.sort-results {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: var(--heading-color);
+}
+.sort-options {
+	font-size: 12px;
+	line-height: 18px;
+	color: var(--heading-color);
+}
+.sort-options a {
+	color: var(--active-link-color);
+	border-bottom: 1px dashed var(--selection-color);
+}
+.sort-options a:hover {
+	color: var(--selection-color);
+}
+.sort-options a:active {
+	color: var(--heading-color);
+	border: none;
+}
+a.active {
+	color: var(--selection-color);
+	border: none;
+}
+
 /*FOOTER*/
 .hashtag a,
 .tel a {
