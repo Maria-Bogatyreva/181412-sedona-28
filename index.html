@@ -74,36 +74,37 @@
     		<section>
     			<h2>Заинтересовались?</h2>
     			<p class="reservation">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне  </p>
-  	  		 			
-          <button type="button" class="search_title">Поиск гостиницы в Седоне</button>
-          <form action="https://echo.htmlacademy.ru" method="post" class="search_form">
-            <p>
-              <label for="arr-date">Дата заезда:</label>
-              <input type="text" id="arr-date" name="arrival-date" placeholder="24 АПРЕЛЯ 2017">
-              <button type="button" aria-label="Выбрать дату заезда"></button>
-            </p>
+  	  		<div class="popup">		
+            <button type="button" class="search_title">Поиск гостиницы в Седоне</button>
+            <form action="https://echo.htmlacademy.ru" method="post" class="search_form">
+              <p>
+                <label for="arr-date">Дата заезда:</label>
+                <input type="text" id="arr-date" name="arrival-date" placeholder="24 АПРЕЛЯ 2017">
+                <button type="button" aria-label="Выбрать дату заезда"></button>
+              </p>
 
-            <p>
-              <label for="dep-date">Дата выезда:</label>
-              <input type="text" id="dep-date" name="departure-date" placeholder="4 ИЮЛЯ 2017">
-              <button type="button" aria-label="Выбрать дату выезда"></button>
-            </p>
+              <p>
+                <label for="dep-date">Дата выезда:</label>
+                <input type="text" id="dep-date" name="departure-date" placeholder="4 ИЮЛЯ 2017">
+                <button type="button" aria-label="Выбрать дату выезда"></button>
+              </p>
 
-            <p>
-              <label for="adult">Взрослые:</label>
-              <button type="button" aria-label="Уменьшить" class="change_btn">-</button>
-              <input type="text" id="adult" name="adult-person" placeholder="2">
-              <button type="button" aria-label="Увеличить" class="change_btn">+</button>
-            </p>
+              <p>
+                <label for="adult">Взрослые:</label>
+                <button type="button" aria-label="Уменьшить" class="change_btn">-</button>
+                <input type="text" id="adult" name="adult-person" placeholder="2">
+                <button type="button" aria-label="Увеличить" class="change_btn">+</button>
+              </p>
 
-            <p>
-              <label for="child">Дети:</label>
-              <button type="button" aria-label="Уменьшить" class="change_btn">-</button>
-              <input type="text" id="child" name="children" placeholder="0">
-              <button type="button" aria-label="Увеличить" class="change_btn">+</button>
-            </p>
-            <button type="submit" class="search_btn">Найти</button>
-          </form>
+              <p>
+                <label for="child">Дети:</label>
+                <button type="button" aria-label="Уменьшить" class="change_btn">-</button>
+                <input type="text" id="child" name="children" placeholder="0">
+                <button type="button" aria-label="Увеличить" class="change_btn">+</button>
+              </p>
+              <button type="submit" class="search_btn">Найти</button>
+            </form>
+          </div>  
           <img src="img/map.png" width="1199" height="594" alt="Карта города">
     		</section>
     	</main>
