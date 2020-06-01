@@ -43,6 +43,10 @@ body {
 	margin: 0px auto;
 	background-color: var(--accent-color);
 }
+.wrapper-intro {
+	width: 1054px;
+	margin: 0px auto;
+}
 
 li {
 	list-style: none;
@@ -150,13 +154,21 @@ h2 {
 	font-weight: bold;
 	color: var(--heading-color);
 	text-align: center;
+	margin: 0;
+}
+.reservation-title {
+	margin-top: 58px;
+	margin-bottom: 30px;
 }
 .reservation {
 	line-height: 24px;
 	text-align: center;
 	color: var(--heading-color);
+	margin-left: 383px;
+	margin-right: 382px;
+	margin-bottom: 130px;
 }
-/*SEARCH FORM*/
+/*SEARCH FORM(Поиск гостиницы в Седоне)*/
 .search_title {
 	font-family: inherit;
 	color: var(--accent-color);
@@ -268,6 +280,19 @@ a.active {
 }
 
 /*FOOTER*/
+.footer-intro {
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+}
+.contacts {
+	margin-top: 18px;
+	margin-left: 60px;
+}
+.contacts p {
+	margin: 0;
+	margin-bottom: 9px;
+}
 .hashtag a,
 .tel a {
 	color: var(--heading-color);
@@ -276,20 +301,33 @@ a.active {
 	text-align: center;
 	font-weight: bold;
 }
-.social_btn img {
-	background-color: var(--selection-color);
-	padding: 5px;/*Добавила, чтобы просто адекватнее смотрела иконка*/
+.social-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+
 }
-.social_btn img:hover {
+.social_btn {
+	display: inline-block;	
+	background-color: var(--selection-color);
+	width: 46px;
+	height: 48px;
+	text-align: center;
+	margin-right: 6px;
+}
+.social_btn img {
+	padding-top: 15px;
+}
+.social_btn:hover {
 	background-color: var(--selection-color-darker);
 }
-.social_btn img:active {
+.social_btn:active {
 	background-color: var(--selection-color-dark);
 }
 
-.copyright {
+.copyright p{
 	line-height: 26px;
-	
 	color: var(--heading-color);
 }
 /*HOTEL CARD*/
