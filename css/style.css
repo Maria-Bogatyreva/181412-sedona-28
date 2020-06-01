@@ -25,6 +25,16 @@ body {
 	text-transform: uppercase;
 
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
 .wrapper {
 	width: 1200px;
 	margin: 0px auto;
