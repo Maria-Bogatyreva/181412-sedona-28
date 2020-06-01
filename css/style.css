@@ -98,8 +98,16 @@ h1 {
 	color: var(--heading-color);
 	text-transform: uppercase;
 	text-align: center;
+	margin: 0;
+}
+.main-title {
+	margin-top: 40px;
+	margin-left: 365px;
+	margin-right: 365px;
+	margin-bottom: 43px;
 }
 .description {
+	margin: 0;
 	line-height: 26px;
 	text-align: center;
 }
