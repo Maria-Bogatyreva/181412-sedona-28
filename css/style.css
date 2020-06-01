@@ -112,6 +112,19 @@ h1 {
 	text-align: center;
 }
 /*ADVANTAGES*/
+.advantages {
+	display: grid;
+	grid-template-columns: 400px 400px 400px;
+	margin-top: 51px;
+}
+.image1 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+.image2 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
 .advantages-item {
 	width: 400px;
 	text-align: center;
