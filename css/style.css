@@ -1,7 +1,6 @@
 :root {
 	--basic-color: #333333;
 	--heading-color: #000000;
-	--active-link-color: rgba(0, 0, 0, 0.3);
 	--accent-color: #FFFFFF;
 	--selection-color: #81B3D2;
 	--selection-color-darker: #669EC0;
@@ -72,9 +71,8 @@ nav {
 	left: 530px;
 }
 .main-nav {
-	width: 1054px;
-	margin: 0px auto;	
 	padding: 0;
+	margin: 0;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	line-height: 26px;
@@ -83,8 +81,20 @@ nav {
 	flex-wrap: wrap;
 	justify-content: space-between;	
 }
-.main-nav li:nth-child(2) {
-	margin-right: 260px ;
+.main-nav li {
+	width: 25%;
+	display: block;
+	box-sizing: border-box;
+}
+.main-nav li:first-child {
+	padding-left: 72px;
+}
+.main-nav li:last-child {
+	padding-right: 72px;
+}
+.main-nav li:nth-child(3),
+.main-nav li:last-child {
+	text-align: right;
 }
 .main-nav a {
 	color: var(--heading-color);
@@ -94,7 +104,8 @@ nav {
 	color: var(--selection-color);
 }
 .main-nav a:active {
-	color: var(--active-link-color);
+	color: var(--heading-color);
+	opacity: 0.3;
 }
 .main-nav a:not([href]) {
 	color: var(--additional-color);
