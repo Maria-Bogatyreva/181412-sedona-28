@@ -29,15 +29,19 @@ body {
 .popup {
 	display: none;
 }
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .wrapper {
 	width: 1200px;
@@ -76,6 +80,7 @@ nav {
 	line-height: 26px;
 	font-weight: bold;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;	
 }
 .main-nav li:nth-child(2) {
@@ -295,7 +300,6 @@ a.active {
 .footer-intro {
 	display: grid;
 	grid-template-columns: auto auto auto;
-
 }
 .contacts {
 	margin-top: 18px;
@@ -321,16 +325,15 @@ a.active {
 
 }
 .social_btn {
-	display: inline-block;	
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;	
 	background-color: var(--selection-color);
 	width: 46px;
 	height: 48px;
-	text-align: center;
 	margin-right: 6px;
 }
-.social_btn img {
-	padding-top: 15px;
-}
+
 .social_btn:hover {
 	background-color: var(--selection-color-darker);
 }
