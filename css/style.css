@@ -308,32 +308,39 @@ a.active {
 }
 
 /*FOOTER*/
-.footer-intro {
-	display: grid;
-	grid-template-columns: auto auto auto;
+.main-footer {
+	width: 100%;
+	display: flex;
+	padding-bottom: 30px;
 }
 .contacts {
+	width: 400px;
+	box-sizing: border-box;
 	margin-top: 18px;
-	margin-left: 60px;
+	padding-left: 130px;
 }
 .contacts p {
 	margin: 0;
 	margin-bottom: 9px;
 }
-.hashtag a,
-.tel a {
+.contacts a {
 	color: var(--heading-color);
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
 	font-weight: bold;
 }
+.social {
+	width: 400px;
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
+}
 .social-list {
 	display: flex;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	margin-top: 30px;
-
 }
 .social_btn {
 	display: flex;
@@ -351,10 +358,21 @@ a.active {
 .social_btn:active {
 	background-color: var(--selection-color-dark);
 }
-
+.copyright {
+	width: 400px;
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
+}
+.copyright-intro {
+	display: flex;
+}
 .copyright p{
 	line-height: 26px;
 	color: var(--heading-color);
+	margin-right: 8px;
+
 }
 /*HOTEL CARD*/
 .hotel_item {
