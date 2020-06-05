@@ -29,7 +29,7 @@
 				<form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
 				 	<fieldset class="form-group">
 				 		<legend>Инфраструктура:</legend>
-				 		<ul>
+				 		<ul class="value-list">
 				 			<li>
 				 				<input type="checkbox" name="pool" id="filter-pool" checked>
 				 				<label for="filter-pool">Бассейн</label>
@@ -47,7 +47,7 @@
 
 				 	<fieldset class="form-group">
 				 		<legend>Тип жилья:</legend>
-				 		<ul>
+				 		<ul class="value-list">
 			 				<li>
 				 				<input type="checkbox" name="hotel" id="filter-hotel" checked>
 				 				<label for="filter-hotel">Гостиница</label>
@@ -63,32 +63,36 @@
 				 		</ul>
 				 	</fieldset>
 
-				 	<fieldset class="form-group">
-				 		<legend>Стоимость в сутки (р):</legend>
-				 		<label for="min">от</label>
-				 		<input type="text" id="min" name="min-price" placeholder="0">
-				 		<label for="max">до</label>
-				 		<input type="text" id="max" name="max-price" placeholder="3000">
-				 	</fieldset>
+				 	<div class="form-group">
+					 	<fieldset>
+					 		<legend>Стоимость в сутки (р):</legend>
+					 		<label for="min">от</label>
+					 		<input type="text" id="min" name="min-price" placeholder="0">
+					 		<label for="max">до</label>
+					 		<input type="text" id="max" name="max-price" placeholder="3000">
+					 	</fieldset>
 
-				 	<button type="submit" class="filter-btn">Показать</button>
+					 	<button type="submit" class="filter-btn">Показать</button>
+					</div>
 				</form>
 			</section>
 			<section>
-				<h2 class="visually-hidden">Гостиницы: результаты поиска</h2>
-				<div class="sort">
-					<p class=sort-results>Найдено: 3</p>
+				<div class="wrapper-intro">
+					<h2 class="visually-hidden">Гостиницы: результаты поиска</h2>
+					<div class="sort">
+						<p class=sort-results>Найдено: 3</p>
 
-					<div class="sort-options">
-						<p>Сортировка:</p>
-						<ul>
-							<li><a href="#" class="active">По цене</a></li>
-							<li><a href="#">По типу</a></li>
-							<li><a href="#">По рейтингу</a></li>
-						</ul>
+						<div class="sort-options">
+							<p>Сортировка:</p>
+							<ul class="value-sort">
+								<li><a href="#" class="active">По цене</a></li>
+								<li><a href="#">По типу</a></li>
+								<li><a href="#">По рейтингу</a></li>
+							</ul>
+						</div>
+						<!--Картинка сортировки-->
+						<img src="https://via.placeholder.com/40x20" alt="">
 					</div>
-					<!--Картинка сортировки-->
-					<img src="https://via.placeholder.com/40x20" alt="">
 				</div>
 				<article class="hotel_item">
 					<img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa" class="hotel_foto">

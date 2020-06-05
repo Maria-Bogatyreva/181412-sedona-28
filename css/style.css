@@ -190,7 +190,7 @@ h1 {
 	width: 800px;
 	height: 256px;
 }
-/*SEARCH HOTELS*/
+/*SEARCH HOTELS. Блок "Заинтересовались?"*/
 .reservation-section {
 	position: relative;
 }
@@ -219,9 +219,8 @@ h2 {
 .city-map {
 	position: absolute;
 	top: 236px;
-	
 }
-/*SEARCH FORM(Поиск гостиницы в Седоне)*/
+/*SEARCH FORM. Попап. (Поиск гостиницы в Седоне)*/
 .search_title {
 	font-family: inherit;
 	color: var(--accent-color);
@@ -281,9 +280,22 @@ h2 {
 /*FILTER & SORT*/
 /*filter*/
 .filter-form {
-	background-color: #5496BD;/*Временно, чтобы был виден шрифт*/
+	display: flex;
+	justify-content: space-between;
+	background-image: url("../img/filter-background.jpg");
 	color: var(--accent-color);
+	padding: 26px 72px 32px 72px;
 }
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+ .value-list {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
 .filter-form legend {
 	font-size: 16px;
 	font-weight: bold;
@@ -305,13 +317,23 @@ h2 {
 	color: var(--heading-color);
 }
 /*sort*/
+.sort {
+	display: flex;
+	align-items: center;
+}
 .sort-results {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	color: var(--heading-color);
+	margin: 0;
+	margin-top: 30px;
+	margin-right: 46px;
 }
 .sort-options {
+	display: flex;
+	margin-right: auto;
+	margin-top: 15px;
 	font-size: 12px;
 	line-height: 18px;
 	color: var(--heading-color);
@@ -330,6 +352,12 @@ h2 {
 a.active {
 	color: var(--selection-color);
 	border: none;
+}
+.value-sort {
+	display: flex;
+}
+.value-sort li {
+	margin-right: 33px;
 }
 
 /*FOOTER*/
