@@ -209,7 +209,7 @@ h2 {
 	text-align: center;
 	color: var(--heading-color);
 	margin: 0 auto;
-	margin-bottom: 557px;
+	margin-bottom: 554px;
 	padding-bottom: 50px;
 }
 .city-map {
@@ -374,19 +374,22 @@ a.active {
 }
 /*FOOTER*/
 .main-footer {
-	width: 1200px;
-	display: flex;	
-	justify-content: space-around;
+	width: 100%;
+	display: grid;	
+	grid-template-columns: 400px 400px 400px;
 	padding-top: 24px;
 	padding-bottom: 46px;
 	background-color: var(--accent-color);
 	opacity: 0.9;
 }
+/*Блок 1*/
 .contacts {
 	text-align: center;
+	padding-left: 74px;
 }
 .contacts p {
 	margin: 0;
+	margin-bottom: 9px;
 }
 .contacts a {
 	color: var(--heading-color);
@@ -395,29 +398,34 @@ a.active {
 	text-align: center;
 	font-weight: bold;
 }
+/*Блок 2*/
 .social {
 	display: flex;
 	justify-content: center;
 }
-.social-list {
-	display: flex;
-	padding: 0;
-	padding-right: 18px;
-	margin: 0 auto;
-}
-.social-list li{
-	width: 46px;
-	height: 48px;
-	margin-right: 6px;
-}
 .social_btn {
-	display: flex;
- 	align-items: center;
- 	justify-content: center;	
+	display: inline-block;
 	background-color: var(--selection-color);
 	width: 46px;
 	height: 48px;
 	margin-right: 6px;
+	margin-top: 11px;
+}
+.social-twitter {
+	margin-left: 10px;
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.social-facebook {
+	background-image: url(../img/facebook.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.social-youtube {
+	background-image: url(../img/youtube.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .social_btn:hover {
@@ -426,6 +434,7 @@ a.active {
 .social_btn:active {
 	background-color: var(--selection-color-dark);
 }
+/*Блок 3*/
 .copyright {
 	display: flex;
 	justify-content: center;
