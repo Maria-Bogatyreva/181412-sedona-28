@@ -25,9 +25,6 @@ body {
 	text-transform: uppercase;
 
 }
-.popup {
-	display: none;
-}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -206,7 +203,6 @@ h2 {
 .reservation-title {
 	margin-top: 58px;
 	margin-bottom: 32px;
-	z-index: 10;
 }
 .reservation {
 	line-height: 25px;
@@ -220,7 +216,14 @@ h2 {
 	position: absolute;
 	top: 236px;
 }
-/*SEARCH FORM. Попап. (Поиск гостиницы в Седоне)*/
+/*SEARCH FORM. (Поиск гостиницы в Седоне)*/
+.search-hotel {
+	position: absolute;
+	top: 150px;
+	left: 318px;
+	z-index: 1;
+	width: 568px;
+}
 .search_title {
 	font-family: inherit;
 	color: var(--accent-color);
@@ -231,6 +234,9 @@ h2 {
 	font-weight: bold;
 	line-height: 26px;
 	border: none;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .search_title:hover {
 	background-color: var(--additional-color-darker);
@@ -238,6 +244,13 @@ h2 {
 .search_title:active {
 	background-color: var(--additional-color-dark);
 	color: rgba(255, 255, 255, 0.3);
+}
+.search_form {
+	width: 100%;
+	background-color: var(--accent-color);
+}
+.search_form p {
+	margin: 0;
 }
 .search_form label {
 	line-height: 26px;
@@ -359,11 +372,9 @@ a.active {
 .value-sort li {
 	margin-right: 33px;
 }
-
 /*FOOTER*/
 .main-footer {
 	width: 1200px;
-	z-index: 100;
 	display: flex;	
 	justify-content: space-around;
 	padding-top: 24px;
