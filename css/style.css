@@ -191,6 +191,9 @@ h1 {
 	height: 256px;
 }
 /*SEARCH HOTELS*/
+.reservation-section {
+	position: relative;
+}
 h2 {
 	font-size: 30px;
 	line-height: 24px;
@@ -198,18 +201,25 @@ h2 {
 	color: var(--heading-color);
 	text-align: center;
 	margin: 0;
+	margin-bottom: 32px;
 }
 .reservation-title {
 	margin-top: 58px;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
+	z-index: 10;
 }
 .reservation {
-	line-height: 24px;
+	line-height: 25px;
 	text-align: center;
 	color: var(--heading-color);
-	margin-left: 383px;
-	margin-right: 382px;
-	margin-bottom: 130px;
+	margin: 0 auto;
+	margin-bottom: 557px;
+	padding-bottom: 50px;
+}
+.city-map {
+	position: absolute;
+	top: 236px;
+	
 }
 /*SEARCH FORM(Поиск гостиницы в Седоне)*/
 .search_title {
@@ -325,6 +335,7 @@ a.active {
 /*FOOTER*/
 .main-footer {
 	width: 1200px;
+	z-index: 100;
 	display: flex;	
 	justify-content: space-around;
 	padding-top: 24px;
