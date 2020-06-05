@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 	margin: 0px auto;
 	background-color: var(--accent-color);
+	position: relative;
 }
 .wrapper-intro {
 	width: 1054px;
@@ -323,19 +324,19 @@ a.active {
 
 /*FOOTER*/
 .main-footer {
-	width: 100%;
-	display: flex;
-	padding-bottom: 30px;
+	width: 1200px;
+	display: flex;	
+	justify-content: space-around;
+	padding-top: 24px;
+	padding-bottom: 46px;
+	background-color: var(--accent-color);
+	opacity: 0.9;
 }
 .contacts {
-	width: 400px;
-	box-sizing: border-box;
-	margin-top: 18px;
-	padding-left: 130px;
+	text-align: center;
 }
 .contacts p {
 	margin: 0;
-	margin-bottom: 9px;
 }
 .contacts a {
 	color: var(--heading-color);
@@ -345,16 +346,19 @@ a.active {
 	font-weight: bold;
 }
 .social {
-	width: 400px;
 	display: flex;
-	align-items: center;
- 	justify-content: center;
+	justify-content: center;
 }
 .social-list {
 	display: flex;
 	padding: 0;
+	padding-right: 18px;
 	margin: 0 auto;
-	margin-top: 30px;
+}
+.social-list li{
+	width: 46px;
+	height: 48px;
+	margin-right: 6px;
 }
 .social_btn {
 	display: flex;
@@ -373,11 +377,8 @@ a.active {
 	background-color: var(--selection-color-dark);
 }
 .copyright {
-	width: 400px;
-	padding-top: 30px;
 	display: flex;
-	align-items: center;
- 	justify-content: center;
+	justify-content: center;
 }
 .copyright-intro {
 	display: flex;
