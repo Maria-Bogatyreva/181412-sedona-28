@@ -438,15 +438,20 @@ a.active {
 /*Блок 3*/
 .copyright {
 	display: flex;
+	align-items: center;
 	justify-content: center;
+	padding-top: 5px;
+	padding-right: 69px;
 }
-.copyright-intro {
-	display: flex;
-}
-.copyright p{
+
+.copyright span{
 	line-height: 26px;
 	color: var(--heading-color);
 	margin-right: 8px;
+}
+.copyright a {
+	display: inline-block;
+
 
 }
 /*HOTEL CARD*/
