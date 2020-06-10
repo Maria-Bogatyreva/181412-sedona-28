@@ -1,13 +1,14 @@
 :root {
 	--basic-color: #333333;
 	--heading-color: #000000;
-	--accent-color: #FFFFFF;
+	--rating-color: #666666;
 	--selection-color: #81B3D2;
 	--selection-color-darker: #669EC0;
 	--selection-color-dark: #5496BD;
 	--additional-color: #766357;
 	--additional-color-darker: #604E43;
 	--additional-color-dark:#503E33;
+	--accent-color: #FFFFFF;
 	--form-color: #F2F2F2;
 	--form-color-darker: #EBEBEB;
 	--advantages-color: #EEEEEE;
@@ -543,28 +544,29 @@ a.active {
 }
 .copyright a {
 	display: inline-block;
-
-
 }
 /*HOTEL CARD*/
 .hotel_item {
 	display: flex;
 	align-items: center;
 	border-top: 1px solid var(--border-color);
-	padding: 25px 72px 30px 73px;
+	padding: 25px 72px 30px 74px;
 }
 .hotel_card {
+	width: 258px;
+	position: relative;
 	margin-right: auto;
 	align-self: flex-start;
 }
 .hotel_foto {
 	margin-top: 5px;
-	margin-right: 30px;
+	margin-right: 28px;
 }
 .hotel_title {
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0;
+	margin-bottom: 7px;
 }
 .hotel_title a {
 	color: var(--heading-color);
@@ -577,17 +579,36 @@ a.active {
 }
 .hotel_description {
 	margin: 0;
+	margin-bottom: 15px;
+}
+.hotel_item:last-child {
+	border: 1px solid var(--border-color);
+}
+.hotel_item span {
+	margin-right: 34px;
+}
+.hotel_item:nth-child(odd) span {
+	margin-right: 60px;
+}
+.hotel_item:last-child span {
+	margin-right: 18px;
 }
 .btn {
+	position: absolute;
 	font: inherit;
 	font-size: inherit;
 	line-height: inherit;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: var(--accent-color);
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 .btn_info {
 	background-color: var(--selection-color);
+	width: 110px;
+	left: 0;
 }
 .btn_info:hover {
 	background-color: var(--selection-color-darker);
@@ -597,12 +618,43 @@ a.active {
 }
 .btn_order {
 	background-color: var(--additional-color);	
+	right: 0;
+	width: 142px;
 }
 .btn_order:hover {
 	background-color: var(--additional-color-darker);
 }
 .btn_order:active {
 	background-color: var(--additional-color-dark);
+}
+/*Rating*/
+.hotel_rating {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+.hotel_rating p {
+	background-color: var(--form-color);
+	color: var(--rating-color);
+	padding: 3px 12px 3px 15px;
+	margin: 0;
+	margin-top: 45px;
+}
+.stars{
+	background-image: url("../img/star.svg");
+	background-repeat: space;
+	height: 18px;
+	margin-top: 5px;
+}
+.stars-4 {
+	width: 90px;
+}
+.stars-3 {
+	width: 65px;
+}
+.stars-2 {
+	width: 40px;
 }
 
 
