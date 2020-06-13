@@ -306,6 +306,7 @@ h2 {
 }
 .search_form input {
 	background-color: var(--form-color);
+	box-sizing: border-box;
 	border: 0;
 	padding: 0;
 	padding-top: 6px;
@@ -322,9 +323,11 @@ h2 {
 	background-color: var(--form-color-darker);
 }
 .search_form input:focus {
-	box-sizing: border-box;
 	background-color: var(--accent-color);
 	border: 2px solid #E5E5E5;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 11px;
 }
 /*Линия 1*/
 .label-arr-date {
@@ -339,6 +342,13 @@ h2 {
 	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: pointer;
+}
+.calendar-btn:hover {
+	background-image: url("../img/calendar-hover.svg");
+}
+.calendar-btn:active {
+	background-image: url("../img/calendar-active.svg");
 }
 /*Линия 2*/
 .label-dep-date {
@@ -362,8 +372,28 @@ h2 {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.change_btn_minus:hover {
+	background-image: url("../img/minus-hover.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.change_btn_minus:active{
+	background-image: url("../img/minus-active.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .change_btn_plus {
 	background-image: url("../img/plus.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.change_btn_plus:hover {
+	background-image: url("../img/plus-hover.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.change_btn_plus:active{
+	background-image: url("../img/plus-active.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -371,7 +401,7 @@ h2 {
 	display: flex;
 }
 .value-input {
-	width: 25px;
+	width: 36px;
 }
 .search_btn {
 	width: 100%;
@@ -387,6 +417,7 @@ h2 {
 	text-transform: uppercase;
 	margin-bottom: 55px;
 	margin-top: 24px;
+	cursor: pointer;
 }
 /*FILTER & SORT*/
 /*filter*/
