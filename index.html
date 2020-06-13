@@ -93,34 +93,20 @@
               </div>
 
               <div class="line">
-                <div class="line-part">
-                  <label for="adult">Взрослые:</label>
-
-                  <div class="value-part">
-                    <button type="button" aria-label="Уменьшить" class="change_btn">
-                      <img src="img/minus.svg" width="12" height="3" alt="">
+                <label for="adult" class="label-adult">Взрослые:</label>                 <div class="value-part">
+                    <button type="button" aria-label="Уменьшить" class="change_btn change_btn_minus">                      
                     </button>
-                    <input type="text" id="adult" name="adult-person" placeholder="2">
-                    <button type="button" aria-label="Увеличить" class="change_btn">
-                      <img src="img/plus.svg" width="12" height="3" alt="">
-                    </button>
-                  </div>
+                    <input type="text" id="adult" name="adult-person" placeholder="2" class="value-input">
+                    <button type="button" aria-label="Увеличить" class="change_btn change_btn_plus"></button>
                 </div>
-              
-
-                <div class="line-part">
-                  <label for="child" class="label-child">Дети:</label>
-                  <div class="value-part">
-                    <button type="button" aria-label="Уменьшить" class="change_btn">
-                      <img src="img/minus.svg" width="12" height="3"alt="">
-                    </button>
-                    <input type="text" id="child" name="children" placeholder="0">
-                    <button type="button" aria-label="Увеличить" class="change_btn">
-                      <img src="img/plus.svg" width="12" height="3"alt="">
-                    </button>
-                  </div>
-                </div>        
+                <label for="child" class="label-child">Дети:</label>
+                <div class="value-part">
+                    <button type="button" aria-label="Уменьшить" class="change_btn change_btn change_btn_minus"></button>
+                    <input type="text" id="child" name="children" placeholder="0" class="value-input">
+                    <button type="button" aria-label="Увеличить" class="change_btn change_btn_plus"></button>
+                </div>
               </div>
+
               <button type="submit" class="search_btn">Найти</button>
             </form>
           </div> 
