@@ -591,7 +591,7 @@ h2 {
 .sort-options a {
 	color: var(--active-link-color);
 	opacity: 0.3;
-	border-bottom: 1px dashed var(--selection-color);
+	border-bottom: 1px dotted var(--selection-color);
 }
 .sort-options a:hover {
 	color: var(--selection-color);
