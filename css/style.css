@@ -351,7 +351,7 @@ h2 {
 	fill: #000000;	
 }
 .calendar-btn:active svg path {
-	fill: #81B3D2;
+	fill: var(--selection-color);
 }
 /*Линия 2*/
 .label-dep-date {
@@ -385,7 +385,7 @@ h2 {
 }
 .change_btn:active svg path, 
 .change_btn:active svg rect {
-	fill: #81B3D2;
+	fill: var(--selection-color);
 }
 
 .value-part {
@@ -561,16 +561,15 @@ a.active {
 }
 .copyright a {
 	display: block;
-	width: 115px;
-	height: 41px;
-	background-image: url("../img/logo-htmlacademy.svg");
-	background-position: center;
+	width: 114px;
+	height: 40px;
+	
 }
-.copyright a:hover {
-	background-image: url("../img/logo-htmlacademy-hover.svg");
+.copyright a:hover path {
+	fill: var(--selection-color);
 }
-.copyright a:active {
-	background-image: url("../img/logo-htmlacademy-active.svg");
+.copyright a:active path {
+	fill: #BDBBBC;
 }
 /*HOTEL CARD*/
 .hotel_item {
