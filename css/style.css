@@ -260,7 +260,7 @@ h2 {
 	margin: 0 auto;
 	z-index: 100;
 	width: 567px;
-	margin-bottom: 77px;
+	margin-bottom: 80px;
 }
 .search_title {
 	font-family: inherit;
@@ -497,7 +497,7 @@ a.active {
 	width: 100%;
 	display: grid;	
 	grid-template-columns: 400px 400px 400px;
-	padding-top: 24px;
+	padding-top: 25px;
 	padding-bottom: 28px;
 	background-color: var(--accent-color);
 	opacity: 0.9;
@@ -550,7 +550,7 @@ a.active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 7px;
+	
 	padding-right: 73px;
 }
 
@@ -562,8 +562,7 @@ a.active {
 .copyright a {
 	display: block;
 	width: 114px;
-	height: 40px;
-	
+	height: 40px;	
 }
 .copyright a:hover path {
 	fill: var(--selection-color);
