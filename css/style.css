@@ -412,31 +412,99 @@ h2 {
 }
 /*FILTER & SORT*/
 /*filter*/
+.filters {
+	padding: 26px 72px 7px 72px;
+	background-image: url("../img/filter-background.jpg");
+}
 .filter-form {
+	width: 1056px;
 	display: flex;
 	justify-content: space-between;
-	background-image: url("../img/filter-background.jpg");
-	color: var(--accent-color);
-	padding: 26px 72px 32px 72px;
+	color: var(--accent-color);	
 }
-fieldset {
+.form-group:nth-child(2) {
+	margin-right: auto;
+	margin-left: 119px;
+}
+.filter-form fieldset {
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+.filter-form legend {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.form-group:last-child legend {
+	margin-bottom: 11px;
+}
+.value-list .filter-option {
+	margin-bottom: 25px;
+	padding-left: 39px;
 }
  .value-list {
  	margin: 0;
  	padding: 0;
  }
-
-.filter-form legend {
-	font-size: 16px;
-	font-weight: bold;
+ .filter-option label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+.filter-input-checkbox:not(:checked) + label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 19px;
+	height: 19px;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+}
+.filter-input-checkbox:checked + label:after {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	top: 0;
+	left: -40px;
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+/*Часть 3*/
+.range {
+	width: 319px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	border: 2px solid #FFFFFF;
+	border-radius: 2px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+.range-part {
+	width: 50%;
+}
+.range-part:first-child {
+	border-right: 2px solid #FFFFFF;
+	padding-right: 2px;
 }
 .filter-form input[type=text] {
 	color: var(--accent-color);
 	text-transform: uppercase;
 	background-color: transparent;
+	border: none;
+	width: 50px;
+	padding: 0;
+}
+.range-part:first-child label {
+	margin-left: 65px;
+}
+.range-part:last-child label {
+	margin-left: 52px;
 }
 .filter-btn {
 	color: inherit;
@@ -444,10 +512,54 @@ fieldset {
 	text-transform: uppercase;
 	border: 2px solid var(--accent-color);
 	border-radius: 2px;
+	margin-left: 85px;
+	margin-top: 32px;
+	padding-top: 7px;
+	padding-left: 34px;
+	padding-right: 33px;
+	padding-bottom: 9px;
+}
 }
 .filter-btn:hover {
 	background-color: var(--accent-color);
 	color: var(--heading-color);
+}
+/*Range Filter*/
+.range-filter {
+	width: 312px;
+	margin-top: 18px;
+	padding-left: 5px;
+	position: relative;
+}
+.range-filter .scale {
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.range-filter .bar {
+	width: 80%;
+	height: 2px;
+	background-color: #FFFFFF;
+}
+.range-filter .toggle {
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+ 	background-color: #ababab;
+ 	border-radius: 50%;
+	position: absolute;
+	box-shadow: 0px 2px rgba(171, 171, 171, 0.3);
+	top: -10px;
+}
+.range-filter .toggle:hover {
+	cursor: pointer;
+	border: 10px solid #ffffff;
+}
+.toggle-min {
+	left: 0px;	
+}
+.toggle-max {
+	left: 251px;
 }
 /*sort*/
 .sort {
