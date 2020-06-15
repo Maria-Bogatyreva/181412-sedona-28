@@ -330,6 +330,7 @@ h2 {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-left: 11px;
+	outline: none;
 }
 /*Линия 1*/
 .label-arr-date {
