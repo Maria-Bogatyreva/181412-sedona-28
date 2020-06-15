@@ -340,17 +340,17 @@ h2 {
 	height: 38px;
 	border: none;
 	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--form-color);
-	background-image: url("../img/calendar.svg");
-	background-repeat: no-repeat;
-	background-position: center;
 	cursor: pointer;
 }
-.calendar-btn:hover {
-	background-image: url("../img/calendar-hover.svg");
+.calendar-btn:hover svg path {
+	fill: #000000;	
 }
-.calendar-btn:active {
-	background-image: url("../img/calendar-active.svg");
+.calendar-btn:active svg path {
+	fill: #81B3D2;
 }
 /*Линия 2*/
 .label-dep-date {
