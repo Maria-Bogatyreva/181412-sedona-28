@@ -709,7 +709,10 @@ a.active {
 	display: flex;
 	align-items: center;
 	border-top: 1px solid var(--border-color);
-	padding: 25px 72px 30px 74px;
+	padding-top: 24px;
+	padding-bottom: 30px;
+	padding-left: 73px;
+	padding-right: 72px;
 }
 .hotel_card {
 	width: 258px;
@@ -718,14 +721,15 @@ a.active {
 	align-self: flex-start;
 }
 .hotel_foto {
-	margin-top: 5px;
-	margin-right: 28px;
+	margin-top: 6px;
+	margin-right: 29px;
 }
 .hotel_title {
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: bold;
 	margin: 0;
-	margin-bottom: 7px;
+	margin-bottom: 5px;
 }
 .hotel_title a {
 	color: var(--heading-color);
@@ -738,16 +742,16 @@ a.active {
 }
 .hotel_description {
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 }
 .hotel_item:last-child {
 	border: 1px solid var(--border-color);
 }
 .hotel_item span {
-	margin-right: 34px;
+	margin-right: 60px;
 }
 .hotel_item:nth-child(odd) span {
-	margin-right: 60px;
+	margin-right: 35px;
 }
 .hotel_item:last-child span {
 	margin-right: 18px;
@@ -804,7 +808,7 @@ a.active {
 	background-image: url("../img/star.svg");
 	background-repeat: space;
 	height: 18px;
-	margin-top: 5px;
+	margin-top: 4px;
 }
 .stars-4 {
 	width: 90px;
