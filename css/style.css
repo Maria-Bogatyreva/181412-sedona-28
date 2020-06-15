@@ -523,7 +523,9 @@ a.active {
 	justify-content: center;
 }
 .social_btn {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--selection-color);
 	width: 46px;
 	height: 48px;
@@ -532,26 +534,15 @@ a.active {
 }
 .social-twitter {
 	margin-left: 9px;
-	background-image: url(../img/twitter.svg);
-	background-repeat: no-repeat;
-	background-position: center;
 }
-.social-facebook {
-	background-image: url(../img/facebook.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.social-youtube {
-	background-image: url(../img/youtube.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .social_btn:hover {
 	background-color: var(--selection-color-darker);
 }
 .social_btn:active {
 	background-color: var(--selection-color-dark);
+}
+.social_btn:active path {
+	fill: rgba(255, 255, 255, 0.3);
 }
 /*Блок 3*/
 .copyright {
