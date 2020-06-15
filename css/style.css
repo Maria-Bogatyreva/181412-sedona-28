@@ -500,6 +500,9 @@ h2 {
 	width: 50px;
 	padding: 0;
 }
+.filter-form input[type=text]:focus {
+	outline: none;
+}
 .range-part:first-child label {
 	margin-left: 65px;
 }
@@ -565,6 +568,10 @@ h2 {
 .sort {
 	display: flex;
 	align-items: center;
+	padding-top: 19px;
+	padding-bottom: 25px;
+	padding-left: 73px;
+	padding-right: 73px;
 }
 .sort-results {
 	font-size: 21px;
@@ -572,37 +579,52 @@ h2 {
 	font-weight: bold;
 	color: var(--heading-color);
 	margin: 0;
-	margin-top: 30px;
 	margin-right: 46px;
 }
 .sort-options {
 	display: flex;
 	margin-right: auto;
-	margin-top: 15px;
 	font-size: 12px;
 	line-height: 18px;
 	color: var(--heading-color);
 }
 .sort-options a {
 	color: var(--active-link-color);
+	opacity: 0.3;
 	border-bottom: 1px dashed var(--selection-color);
 }
 .sort-options a:hover {
 	color: var(--selection-color);
+	opacity: 1;
 }
 .sort-options a:active {
 	color: var(--heading-color);
 	border: none;
+	opacity: 1;
 }
 a.active {
 	color: var(--selection-color);
 	border: none;
+	opacity: 1;
 }
 .value-sort {
 	display: flex;
 }
 .value-sort li {
 	margin-right: 33px;
+}
+.sort-links {
+	margin-top: 6px;
+}
+.sort-link {
+	margin-left: 9px;
+}
+.sort-link:hover path {
+	fill: #000000;
+}
+.sort-link:active path,
+.sort-active path{
+	fill: #81B3D2;
 }
 /*FOOTER*/
 .main-footer {
