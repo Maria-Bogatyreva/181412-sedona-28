@@ -365,46 +365,28 @@ h2 {
 	margin-right: 41px;
 }
 .label-child {
-	margin-right: 30px;
+	margin-right: 29px;
 }
 .change_btn {
 	width: 38px;
 	height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--form-color);
 	border: none;
 	padding: 0;
 	cursor: pointer;
 }
-.change_btn_minus {
-	background-image: url("../img/minus.svg");
-	background-repeat: no-repeat;
-	background-position: center;
+.change_btn:hover svg path, 
+.change_btn:hover svg rect {
+	fill: #000000;
 }
-.change_btn_minus:hover {
-	background-image: url("../img/minus-hover.svg");
-	background-repeat: no-repeat;
-	background-position: center;
+.change_btn:active svg path, 
+.change_btn:active svg rect {
+	fill: #81B3D2;
 }
-.change_btn_minus:active{
-	background-image: url("../img/minus-active.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.change_btn_plus {
-	background-image: url("../img/plus.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.change_btn_plus:hover {
-	background-image: url("../img/plus-hover.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.change_btn_plus:active{
-	background-image: url("../img/plus-active.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
+
 .value-part {
 	display: flex;
 }
