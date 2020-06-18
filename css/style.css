@@ -45,12 +45,8 @@ input[type="radio"].visually-hidden {
 	margin: 0px auto;
 	background-color: var(--accent-color);
 	position: relative;
+	box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
-.wrapper-intro {
-	width: 1054px;
-	margin: 0px auto;
-}
-
 li {
 	list-style: none;
 }
@@ -130,6 +126,9 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0;
+}
+.blank {
+	margin-top: 50px;
 }
 .main-title {
 	margin-top: 41px;
@@ -521,7 +520,7 @@ h2 {
 	padding-left: 34px;
 	padding-right: 33px;
 	padding-bottom: 9px;
-}
+	cursor: pointer;
 }
 .filter-btn:hover {
 	background-color: var(--accent-color);
