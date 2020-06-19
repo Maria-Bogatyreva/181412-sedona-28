@@ -13,6 +13,7 @@
 	--form-color-darker: #EBEBEB;
 	--advantages-color: #EEEEEE;
 	--border-color: #E5E5E5;
+	--active-link-color: rgba(255, 255, 255, 0.3);
 }
 body {
 	margin: 0;
@@ -278,7 +279,7 @@ h2 {
 }
 .search-title:active {
 	background-color: var(--additional-color-dark);
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--active-link-color);
 }
 /*Form*/
 /*Общие стили*/
@@ -419,7 +420,7 @@ h2 {
 }
 .search-btn:active {
 	background-color: var(--selection-color-dark);
-	color: rgba(255, 255, 255, 0.3 );
+	color: var(--active-link-color);
 }
 
 /*FILTER & SORT*/
@@ -548,7 +549,7 @@ h2 {
 }
 .range-filter .scale {
 	height: 2px;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: var(--active-link-color);
 }
 .range-filter .bar {
 	width: 80%;
@@ -601,7 +602,7 @@ h2 {
 	color: var(--heading-color);
 }
 .sort-options a {
-	color: var(--active-link-color);
+	color: var(--heading-link-color);
 	opacity: 0.3;
 	border-bottom: 1px dotted var(--selection-color);
 }
@@ -689,7 +690,7 @@ a.active {
 	background-color: var(--selection-color-dark);
 }
 .social-btn:active path {
-	fill: rgba(255, 255, 255, 0.3);
+	fill: var(--active-link-color);
 }
 /*Блок 3*/
 .copyright {
@@ -750,7 +751,7 @@ a.active {
 	color: var(--selection-color);
 }
 .hotel-title a:active {
-	color: var(--active-link-color);
+	opacity: 0.3;
 }
 .hotel-description {
 	margin: 0;
@@ -790,6 +791,7 @@ a.active {
 }
 .btn-info:active {
 	background-color: var(--selection-color-dark);
+	color: var(--active-link-color);
 }
 .btn-order {
 	background-color: var(--additional-color);	
@@ -801,6 +803,7 @@ a.active {
 }
 .btn-order:active {
 	background-color: var(--additional-color-dark);
+	color: var(--active-link-color);
 }
 /*Rating*/
 .hotel-rating {
