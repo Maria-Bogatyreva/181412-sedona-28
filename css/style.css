@@ -227,6 +227,7 @@ h1 {
 /*SEARCH HOTELS. Блок "Заинтересовались?"*/
 .reservation-section {
 	position: relative;
+	text-align: center;
 }
 h2 {
 	font-size: 30px;
@@ -251,16 +252,10 @@ h2 {
 .city-map {
 	position: absolute;
 	top: 236px;
+	left: 0;
 	z-index: 0;
 }
 /*SEARCH FORM. (Поиск гостиницы в Седоне)*/
-.search-hotel {
-	position: relative;
-	margin: 0 auto;
-	z-index: 100;
-	width: 567px;
-	margin-bottom: 80px;
-}
 .search-title {
 	font-family: inherit;
 	color: var(--accent-color);
@@ -271,10 +266,12 @@ h2 {
 	font-weight: bold;
 	line-height: 26px;
 	border: none;
-	width: 100%;
+	width: 567px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	cursor: pointer;
+	margin-bottom: 473px;
+	outline: none;
 }
 .search-title:hover {
 	background-color: var(--additional-color-darker);
@@ -286,6 +283,13 @@ h2 {
 /*Form*/
 /*Общие стили*/
 .search-form {
+	/*display: none;*/
+	z-index: 100;
+	position: absolute;
+	top: 235px;
+	left: 316px;
+	box-sizing: border-box;
+	width: 567px;
 	background-color: var(--accent-color);
 	padding-top: 54px;
 	padding-left: 55px;
@@ -408,7 +412,9 @@ h2 {
 	margin-bottom: 55px;
 	margin-top: 26px;
 	cursor: pointer;
+	outline: none;
 }
+
 /*FILTER & SORT*/
 /*filter*/
 .filters {
