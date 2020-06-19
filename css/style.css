@@ -850,6 +850,8 @@ a.active {
   100% {
     transform: scaleY(1) translateY(0);
   }
+}
+
   @keyframes shake {
   0%,
   100% {

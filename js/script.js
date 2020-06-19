@@ -17,6 +17,5 @@ SearchForm.addEventListener("submit", function (evt) {
 		SearchForm.classList.remove("form-error");	
 		SearchForm.offsetWidth = SearchForm.offsetWidth;
 		SearchForm.classList.add("form-error");	
-		
 	}	
 });
