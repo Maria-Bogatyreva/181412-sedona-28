@@ -107,6 +107,7 @@ nav {
 	color: var(--additional-color);
 }
 .welcome {
+	background-color: var(--selection-color-darker);
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -435,6 +436,7 @@ h2 {
 .filters {
 	padding: 26px 72px 7px 72px;
 	background-image: url("../img/filter-background.jpg");
+	background-color: var(--additional-color);
 }
 .filter-form {
 	width: 1056px;
