@@ -8,6 +8,7 @@
 	--additional-color: #766357;
 	--additional-color-darker: #604E43;
 	--additional-color-dark:#503E33;
+	--disabled-color: #6A6A6A;
 	--accent-color: #FFFFFF;
 	--form-color: #F2F2F2;
 	--form-color-darker: #EBEBEB;
@@ -475,7 +476,7 @@ h2 {
 	cursor: pointer;
 	user-select: none;
 }
-.filter-input-checkbox:not(:checked) + label::before {
+.filter-input-checkbox + label::before {/*Просто*/
 	content: "";
 	position: absolute;
 	top: 0;
@@ -485,7 +486,7 @@ h2 {
 	border: 2px solid #FFFFFF;
 	border-radius: 3px;
 }
-.filter-input-checkbox:checked + label:after {
+.filter-input-checkbox:checked + label:after {/*Чекнутый*/
 	content: "";
 	position: absolute;
 	width: 27px;
@@ -493,6 +494,27 @@ h2 {
 	top: 0;
 	left: -40px;
 	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.filter-input-checkbox:disabled + label::before { /*Просто Заблокированный*/
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 19px;
+	height: 19px;
+	border: 2px solid var(--disabled-color);
+	border-radius: 3px;
+}
+.filter-input-checkbox:checked:disabled + label:after {/*Чекнутый Заблокированный*/
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	top: 0;
+	left: -40px;
+	background-image: url("../img/checkbox-on-disabled.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
