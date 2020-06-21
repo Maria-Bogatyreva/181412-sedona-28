@@ -9,12 +9,17 @@
 	--additional-color-darker: #604E43;
 	--additional-color-dark:#503E33;
 	--disabled-color: #6A6A6A;
+	--box-shadow-color: rgba(0, 1, 1, 0.2);
 	--accent-color: #FFFFFF;
+	--body-color: #DCDCDC;
 	--form-color: #F2F2F2;
 	--form-color-darker: #EBEBEB;
 	--advantages-color: #EEEEEE;
 	--border-color: #E5E5E5;
 	--active-link-color: rgba(255, 255, 255, 0.3);
+	--copyright-active-link-color: #BDBBBC;
+	--toggle-box-shadow-color: rgba(171, 171, 171, 0.3);
+	--toggle-background-color: #ABABAB;
 }
 body {
 	margin: 0;
@@ -24,7 +29,7 @@ body {
 	line-height: 21px;
 	font-weight: normal;
 	color: var(--basic-color);
-	background-color: #dcdcdc;
+	background-color: var(--body-color);
 	text-transform: uppercase;
 
 }
@@ -47,7 +52,7 @@ input[type="radio"].visually-hidden {
 	margin: 0px auto;
 	background-color: var(--accent-color);
 	position: relative;
-	box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+	box-shadow: 0px 0px 15px 5px var(--box-shadow-color);
 }
 li {
 	list-style: none;
@@ -339,7 +344,7 @@ h2.reservation-title {
 }
 .search-form input:focus {
 	background-color: var(--accent-color);
-	border: 2px solid #E5E5E5;
+	border: 2px solid var(--border-color);
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-left: 11px;
@@ -361,7 +366,7 @@ h2.reservation-title {
 	cursor: pointer;
 }
 .calendar-btn:hover svg path {
-	fill: #000000;	
+	fill: var(--heading-color);	
 }
 .calendar-btn:active svg path {
 	fill: var(--selection-color);
@@ -394,7 +399,7 @@ h2.reservation-title {
 }
 .change-btn:hover svg path, 
 .change-btn:hover svg rect {
-	fill: #000000;
+	fill: var(--heading-color);
 }
 .change-btn:active svg path, 
 .change-btn:active svg rect {
@@ -483,7 +488,7 @@ h2.reservation-title {
 	left: -40px;
 	width: 19px;
 	height: 19px;
-	border: 2px solid #FFFFFF;
+	border: 2px solid var(--accent-color);
 	border-radius: 3px;
 }
 .filter-input-checkbox:checked + label:after {/*Чекнутый*/
@@ -524,7 +529,7 @@ h2.reservation-title {
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
-	border: 2px solid #FFFFFF;
+	border: 2px solid var(--accent-color);
 	border-radius: 2px;
 	padding-top: 5px;
 	padding-bottom: 7px;
@@ -533,7 +538,7 @@ h2.reservation-title {
 	width: 50%;
 }
 .range-part:first-child {
-	border-right: 2px solid #FFFFFF;
+	border-right: 2px solid var(--accent-color);
 	padding-right: 2px;
 }
 .filter-form input[type=text] {
@@ -585,22 +590,22 @@ h2.reservation-title {
 .range-filter .bar {
 	width: 80%;
 	height: 2px;
-	background-color: #FFFFFF;
+	background-color: var(--accent-color);
 }
 .range-filter .toggle {
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid #ffffff;
- 	background-color: #ababab;
+	border: 8px solid var(--accent-color);
+ 	background-color: var(--toggle-background-color);
  	border-radius: 50%;
 	position: absolute;
-	box-shadow: 0px 2px rgba(171, 171, 171, 0.3);
+	box-shadow: 0px 2px var(--toggle-box-shadow-color);
 	top: -10px;
 }
 .range-filter .toggle:hover {
 	cursor: pointer;
-	border: 10px solid #ffffff;
+	border: 10px solid var(--accent-color);
 }
 .toggle-min {
 	left: 0px;	
@@ -664,11 +669,11 @@ a.active {
 	margin-left: 9px;
 }
 .sort-link:hover path {
-	fill: #000000;
+	fill: var(--heading-color);
 }
 .sort-link:active path,
 .sort-active path{
-	fill: #81B3D2;
+	fill: var(--selection-color);
 }
 /*FOOTER*/
 .main-footer {
@@ -746,7 +751,7 @@ a.active {
 	fill: var(--selection-color);
 }
 .copyright a:active path {
-	fill: #BDBBBC;
+	fill: var(--copyright-active-link-color);
 }
 /*HOTEL CARD*/
 .hotel-item {
@@ -897,5 +902,3 @@ a.active {
     transform: translateX(10px);
   }
 }
-
-
