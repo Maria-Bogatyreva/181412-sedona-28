@@ -301,7 +301,7 @@ h2 {
 	animation: bounce 0.3s;
 }
 .form-error {
-	animation: shake 0.6s;
+	animation: shake 0.4s;
 }
 .search-form .line  {
 	margin: 0;
