@@ -265,15 +265,13 @@ h2 {
 }
 /*SEARCH FORM. (Поиск гостиницы в Седоне)*/
 .search-title {
-	font-family: inherit;
+	display: block;
+	margin: 0 auto;
 	color: var(--accent-color);
-	text-transform: uppercase;
 	background-color: var(--additional-color);
-	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	border: none;
 	width: 567px;
 	padding-top: 30px;
 	padding-bottom: 30px;
