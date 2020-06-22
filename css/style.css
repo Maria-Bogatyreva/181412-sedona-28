@@ -126,7 +126,7 @@ nav {
 	margin-bottom: 76px;
 }
 /*MAIN*/
-h1.main-title {
+h1 {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -237,7 +237,7 @@ h1.main-title {
 	position: relative;
 	text-align: center;
 }
-h2.reservation-title {
+h2 {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
