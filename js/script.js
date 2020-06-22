@@ -16,8 +16,11 @@ try {
   isStorageSupport = false;
 }
 
+SearchForm.classList.add("form-invisible");
+
 FormButton.addEventListener("click", function (evt) {
 	evt.preventDefault();
+	SearchForm.classList.toggle("form-invisible");
 	SearchForm.classList.toggle("form-show");
 
 	if (AdultStorage) {

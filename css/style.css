@@ -291,7 +291,7 @@ h2.reservation-title {
 /*Form*/
 /*Общие стили*/
 .search-form {
-	display: none;
+	display: block;
 	z-index: 100;
 	position: absolute;
 	top: 235px;
@@ -302,6 +302,9 @@ h2.reservation-title {
 	padding-top: 54px;
 	padding-left: 55px;
 	padding-right: 55px;
+}
+.form-invisible {
+	display: none;
 }
 .form-show {
 	display: block;
