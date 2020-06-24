@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
 	--basic-color: #333333;
 	--heading-color: #000000;
@@ -31,7 +38,6 @@ body {
 	color: var(--basic-color);
 	background-color: var(--body-color);
 	text-transform: uppercase;
-
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -43,7 +49,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -232,7 +239,7 @@ h1 {
 	padding-bottom: 54px;
 }
 
-/*SEARCH HOTELS. Блок "Заинтересовались?"*/
+/*SEARCH HOTELS*/
 .reservation-section {
 	position: relative;
 	text-align: center;
@@ -262,8 +269,9 @@ h2 {
 	top: 236px;
 	left: 0;
 	z-index: 0;
+	border: none;
 }
-/*SEARCH FORM. (Поиск гостиницы в Седоне)*/
+/*SEARCH FORM*/
 .search-title {
 	display: block;
 	margin: 0 auto;
@@ -287,7 +295,6 @@ h2 {
 	color: var(--active-link-color);
 }
 /*Form*/
-/*Общие стили*/
 .search-form {
 	display: block;
 	z-index: 100;
@@ -306,10 +313,12 @@ h2 {
 }
 .form-show {
 	display: block;
-	animation: bounce 0.3s;
+	-webkit-animation: bounce 0.3s;
+	        animation: bounce 0.3s;
 }
 .form-error {
-	animation: shake 0.4s;
+	-webkit-animation: shake 0.4s;
+	        animation: shake 0.4s;
 }
 .search-form .line  {
 	margin: 0;
@@ -351,7 +360,7 @@ h2 {
 	padding-left: 11px;
 	outline: none;
 }
-/*Линия 1*/
+/*Line 1*/
 .label-arr-date {
 	margin-right: 23px;
 }
@@ -372,11 +381,11 @@ h2 {
 .calendar-btn:active svg path {
 	fill: var(--selection-color);
 }
-/*Линия 2*/
+/*Line 2*/
 .label-dep-date {
 	margin-right: 19px;
 }
-/*Линия 3*/
+/*Line 3*/
 .line-part {
 	display: flex;
 	align-items: center;
@@ -406,7 +415,6 @@ h2 {
 .change-btn:active svg rect {
 	fill: var(--selection-color);
 }
-
 .value-part {
 	display: flex;
 }
@@ -439,7 +447,7 @@ h2 {
 }
 
 /*FILTER & SORT*/
-/*filter*/
+/*Filter*/
 .filters {
 	padding: 26px 72px 7px 72px;
 	background-image: url("../img/filter-background.jpg");
@@ -480,7 +488,9 @@ h2 {
 	position: relative;
 	display: block;
 	cursor: pointer;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
 }
 .filter-input-checkbox + label::before {/*Просто*/
 	content: "";
@@ -524,7 +534,6 @@ h2 {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-/*Часть 3*/
 .range {
 	width: 319px;
 	display: flex;
@@ -614,7 +623,7 @@ h2 {
 .toggle-max {
 	left: 251px;
 }
-/*sort*/
+/*Sort*/
 .sort {
 	display: flex;
 	align-items: center;
@@ -675,84 +684,6 @@ a.active {
 .sort-link:active path,
 .sort-active path{
 	fill: var(--selection-color);
-}
-/*FOOTER*/
-.main-footer {
-	width: 100%;
-	display: grid;	
-	grid-template-columns: 400px 400px 400px;
-	padding-top: 25px;
-	padding-bottom: 28px;
-	background-color: var(--accent-color);
-	opacity: 0.9;
-}
-/*Блок 1*/
-.contacts {
-	text-align: center;
-	padding-left: 74px;
-}
-.contacts p {
-	margin: 0;
-	margin-bottom: 9px;
-}
-.contacts a {
-	color: var(--heading-color);
-	font-size: 21px;
-	line-height: 26px;
-	text-align: center;
-	font-weight: bold;
-}
-/*Блок 2*/
-.social {
-	display: flex;
-	justify-content: center;
-}
-.social-btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--selection-color);
-	width: 46px;
-	height: 48px;
-	margin-right: 6px;
-	margin-top: 11px;
-}
-.social-twitter {
-	margin-left: 9px;
-}
-.social-btn:hover {
-	background-color: var(--selection-color-darker);
-}
-.social-btn:active {
-	background-color: var(--selection-color-dark);
-}
-.social-btn:active path {
-	fill: var(--active-link-color);
-}
-/*Блок 3*/
-.copyright {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-	padding-right: 73px;
-}
-
-.copyright span{
-	line-height: 26px;
-	color: var(--heading-color);
-	margin-right: 8px;
-}
-.copyright a {
-	display: block;
-	width: 114px;
-	height: 40px;	
-}
-.copyright a:hover path {
-	fill: var(--selection-color);
-}
-.copyright a:active path {
-	fill: var(--copyright-active-link-color);
 }
 /*HOTEL CARD*/
 .hotel-item {
@@ -871,7 +802,93 @@ a.active {
 .stars-2 {
 	width: 40px;
 }
+/*FOOTER*/
+.main-footer {
+	width: 100%;
+	display: grid;	
+	grid-template-columns: 400px 400px 400px;
+	padding-top: 25px;
+	padding-bottom: 28px;
+	background-color: var(--accent-color);
+	opacity: 0.9;
+}
+/*Block 1*/
+.contacts {
+	text-align: center;
+	padding-left: 74px;
+}
+.contacts p {
+	margin: 0;
+	margin-bottom: 9px;
+}
+.contacts a {
+	color: var(--heading-color);
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: bold;
+}
+/*Block 2*/
+.social {
+	display: flex;
+	justify-content: center;
+}
+.social-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--selection-color);
+	width: 46px;
+	height: 48px;
+	margin-right: 6px;
+	margin-top: 11px;
+}
+.social-twitter {
+	margin-left: 9px;
+}
+.social-btn:hover {
+	background-color: var(--selection-color-darker);
+}
+.social-btn:active {
+	background-color: var(--selection-color-dark);
+}
+.social-btn:active path {
+	fill: var(--active-link-color);
+}
+/*Block 3*/
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	padding-right: 73px;
+}
+.copyright span{
+	line-height: 26px;
+	color: var(--heading-color);
+	margin-right: 8px;
+}
+.copyright a {
+	display: block;
+	width: 114px;
+	height: 40px;	
+}
+.copyright a:hover path {
+	fill: var(--selection-color);
+}
+.copyright a:active path {
+	fill: var(--copyright-active-link-color);
+}
 /*Animations*/
+@-webkit-keyframes bounce {
+  0% {
+    transform: scaleY(0) translateY(-100%);
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
 @keyframes bounce {
   0% {
     transform: scaleY(0) translateY(-100%);
@@ -879,6 +896,28 @@ a.active {
 
   100% {
     transform: scaleY(1) translateY(0);
+  }
+}
+
+  @-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
