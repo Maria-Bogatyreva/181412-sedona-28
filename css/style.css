@@ -28,6 +28,7 @@
 	--toggle-box-shadow-color: rgba(171, 171, 171, 0.3);
 	--toggle-background-color: #ABABAB;
 }
+/* GLOBAL */
 body {
 	margin: 0;
 	padding: 0;
@@ -67,6 +68,16 @@ img {
 }
 a {
 	text-decoration: none;
+}
+/* GRID */
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 /*HEADER*/
 .nav {
