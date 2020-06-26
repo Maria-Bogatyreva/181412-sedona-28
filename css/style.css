@@ -375,10 +375,10 @@ h2 {
 	background-color: var(--form-color);
 	cursor: pointer;
 }
-.calendar-btn:hover svg path {
+.calendar-btn:hover path {
 	fill: var(--heading-color);	
 }
-.calendar-btn:active svg path {
+.calendar-btn:active path {
 	fill: var(--selection-color);
 }
 /*Line 2*/
@@ -407,12 +407,12 @@ h2 {
 	padding: 0;
 	cursor: pointer;
 }
-.change-btn:hover svg path, 
-.change-btn:hover svg rect {
+.change-btn:hover path, 
+.change-btn:hover rect {
 	fill: var(--heading-color);
 }
-.change-btn:active svg path, 
-.change-btn:active svg rect {
+.change-btn:active path, 
+.change-btn:active rect {
 	fill: var(--selection-color);
 }
 .value-part {
