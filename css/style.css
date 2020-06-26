@@ -497,12 +497,13 @@ h2 {
 	position: absolute;
 	top: 0;
 	left: -40px;
-	width: 19px;
-	height: 19px;
-	border: 2px solid var(--accent-color);
-	border-radius: 3px;
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
-.filter-input-checkbox:checked + label:after {/*Чекнутый*/
+.filter-input-checkbox:checked + label:before {/*Чекнутый*/
 	content: "";
 	position: absolute;
 	width: 27px;
@@ -513,17 +514,19 @@ h2 {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
 .filter-input-checkbox:disabled + label::before { /*Просто Заблокированный*/
 	content: "";
 	position: absolute;
 	top: 0;
 	left: -40px;
-	width: 19px;
-	height: 19px;
-	border: 2px solid var(--disabled-color);
-	border-radius: 3px;
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox-off-disabled.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
-.filter-input-checkbox:checked:disabled + label:after {/*Чекнутый Заблокированный*/
+.filter-input-checkbox:checked:disabled + label:before {/*Чекнутый Заблокированный*/
 	content: "";
 	position: absolute;
 	width: 27px;
