@@ -120,6 +120,7 @@ a {
 .main-nav a:focus,
 .main-nav a:hover {
 	color: var(--selection-color);
+	outline: none;
 }
 .main-nav a:active {
 	color: var(--heading-color);
@@ -295,6 +296,11 @@ a {
 .search-title:hover {
 	background-color: var(--additional-color-darker);
 }
+.search-title:focus {
+	background-color: var(--additional-color-darker);
+	outline: 2px solid var(--selection-color);
+	outline-offset: 2px;
+}
 .search-title:active {
 	background-color: var(--additional-color-dark);
 	color: var(--active-link-color);
@@ -443,7 +449,8 @@ a {
 	cursor: pointer;
 	outline: none;
 }
-.search-btn:hover {
+.search-btn:hover,
+.search-btn:focus {
 	background-color: var(--selection-color-darker);
 }
 .search-btn:active {
@@ -510,6 +517,10 @@ a {
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+.filter-input-checkbox:focus + label::before {
+	outline: 2px solid var(--selection-color);
+	outline-offset: 5px;
 }
 .filter-input-checkbox:checked + label:before {/*Чекнутый*/
 	content: "";
