@@ -1082,17 +1082,17 @@ a.active {
 	margin-right: 8px;
 }
 
-.copyright a {
+.copyright-link {
 	display: block;
 	width: 114px;
 	height: 40px;
 }
 
-.copyright a:hover path {
+.copyright-link:hover path {
 	fill: var(--selection-color);
 }
 
-.copyright a:active path {
+.copyright-link:active path {
 	fill: var(--copyright-active-link-color);
 }
 
